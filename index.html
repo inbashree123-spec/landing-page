@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker - Mature Theme Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #d9c8b8;
+      background-size: cover;
+      animation: none;
+      color: #111111;
+    }
+    @keyframes moveBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://i.imgur.com/5ZQKfNb.png');
+      background-size: 120px;
+      background-repeat: repeat;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://i.imgur.com/5ZQKfNb.png');
+      background-size: 120px;
+      background-repeat: repeat;
+      opacity: 0.12;
+      pointer-events: none;
+    }
+    header {
+      z-index: 5;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.55);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      color:#111;
+    }: blur(6px);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #222;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight:600;
+    }
+    .hero {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 40px;
+      gap: 60px;
+    }
+    .hero-text {
+      max-width: 480px;
+    }
+    .hero-text h2 {
+      font-size: 42px;
+      margin: 0 0 20px;
+    }
+    .hero-text p {
+      font-size: 18px;
+      line-height: 1.5;
+      color:#222;
+    }
+    .hero button {
+      padding: 14px 28px;
+      background: #4caf50;
+      border: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .hero img {
+      width: 350px;
+      filter: drop-shadow(0 0 12px #00000055);
+      position: relative;
+      z-index: 0;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        padding: 60px 20px;
+      }
+      .hero img {
+        width: 260px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Expense Tracker</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Smart, Mature & Minimal Expense Management</h2>
+      <p>Track your expenses with clarity and discipline. Designed for adults who want clean UI, stability, and complete financial control.</p>
+      <button>Get Started</button>
+    </div>
+
+    <!-- Person standing with money illustration -->
+    <img src="photo.png" alt="Person standing with money" />
+  </section>
+  <section id="features" style="padding:80px 40px;background:#d9c8b8;">
+    <h2 style="font-size:32px;margin-bottom:20px;">Features</h2>
+    <ul style="line-height:2;font-size:18px;opacity:0.9;">
+      <li>Track daily, weekly, and monthly expenses</li>
+      <li>Set budgets with alerts</li>
+      <li>Visual charts for insights</li>
+      <li>Secure data storage</li>
+    </ul>
+  </section>
+
+  <section id="download" style="padding:80px 40px;background:#d9c8b8;">
+    <h2 style="font-size:32px;margin-bottom:20px;">Download App</h2>
+    <p style="max-width:500px;font-size:18px;line-height:1.6;opacity:0.9;">Coming soon for Android and iOS. Manage your expenses anywhere, anytime with smooth cloud sync.</p>
+  </section>
+
+  <section id="contact" style="padding:80px 40px;background:#d9c8b8;">
+    <h2 style="font-size:32px;margin-bottom:20px;">Contact Us</h2>
+    <p style="font-size:18px;opacity:0.9;">Email: support@expensetracker.com</p>
+  </section>
+
+</body>
+</html>
